@@ -1,0 +1,11 @@
+<div class="main">
+  <div class="data-input">
+    <input type="text" class="data-input__input" (input)='valueGet($event.target.value)'>
+    <button class="data-input__button" (click) = 'changeValue()'>add</button>
+  </div>
+  <app-default-timer [inputCount]='value'></app-default-timer>
+  <div class="timers">
+    <app-on-push-timer-first [inputCount]='value'></app-on-push-timer-first>
+    <app-on-push-timer-second [inputCount]='value'></app-on-push-timer-second>
+  </div>
+</div>

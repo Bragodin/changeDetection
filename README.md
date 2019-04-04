@@ -1,3 +1,14 @@
+#Change Detection 
+Вам нужно написать 3 компонента с таймерами
+У всех компонентов 
+* есть входяший параметр value: integer, который передается по нажатию на кнопку add
+* есть внутренний параметр counter, который обновляется по таймеру каждую секунду 
+
+Компоненты отличаются тем что:
+1) у первого default ChangeDetectionStrategy
+2) у второго OnPush 
+3) у третьего OnPush, но в обработчике interval мы вызываем метод detectChanges
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
